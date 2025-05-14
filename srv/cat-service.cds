@@ -1,5 +1,8 @@
-using my.bookshop as my from '../db/schema';
+using my.match as my from '../db/schema';
 
 service CatalogService {
-    @readonly entity Books as projection on my.Books;
+  entity Grounds     as projection on my.Grounds;
+  entity Umpires     as projection on my.Umpires;
+  entity Teams       as projection on my.Teams;
+  entity MatchSetup  as projection on my.MatchSetup;
 }
